@@ -12,6 +12,7 @@ const {Client, Collection, GatewayIntentBits} = require('discord.js');
 const client = new Client({intents: [GatewayIntentBits.Guilds]});
 
 client.commands = new Collection();
+
 // Constructs a path to the commands dir
 const foldersPath = path.join(__dirname, 'commands');
 // Returns array of all file names the commands dir contains.
